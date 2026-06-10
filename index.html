@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <title>JS Watch</title>
+</head>
+<body>
+    <section class="flex justify-evenly mt-28">
+        <section id="watchBox" class="relative w-[300px] h-[300px] border-3 border-black border-solid rounded-full">
+            <span class="t1 t absolute text-[16px] font-medium -translate-x-1/2 -translate-y-1/2 top-[13%] left-[73%]">1</span>
+            <span class="t2 t absolute text-[16px] font-medium -translate-x-1/2 -translate-y-1/2 top-[28%] left-[87%]">2</span>
+            <span class="t3 t absolute text-[16px] font-medium -translate-x-1/2 -translate-y-1/2 top-[50%] left-[92%]">3</span>
+            <span class="t4 t absolute text-[16px] font-medium -translate-x-1/2 -translate-y-1/2 top-[72%] left-[87%]">4</span>
+            <span class="t5 t absolute text-[16px] font-medium -translate-x-1/2 -translate-y-1/2 top-[87%] left-[73%]">5</span>
+            <span class="t6 t absolute text-[16px] font-medium -translate-x-1/2 -translate-y-1/2 top-[92%] left-[50%]">6</span>
+            <span class="t7 t absolute text-[16px] font-medium -translate-x-1/2 -translate-y-1/2 top-[87%] left-[27%]">7</span>
+            <span class="t8 t absolute text-[16px] font-medium -translate-x-1/2 -translate-y-1/2 top-[72%] left-[13%]">8</span>
+            <span class="t9 t absolute text-[16px] font-medium -translate-x-1/2 -translate-y-1/2 top-[50%] left-[7%]">9</span>
+            <span class="t10 t absolute text-[16px] font-medium -translate-x-1/2 -translate-y-1/2 top-[28%] left-[13%]">10</span>
+            <span class="t11 t absolute text-[16px] font-medium -translate-x-1/2 -translate-y-1/2 top-[13%] left-[27%]">11</span>
+            <span class="t12 t absolute text-[16px] font-medium -translate-x-1/2 -translate-y-1/2 top-[7%] left-[50%]">12</span>
+            <div class="sticks absolute bottom-1/2 left-1/2 origin-bottom h-[55px] w-[5px] bg-black" id="hour"></div>
+            <div class="sticks absolute bottom-1/2 left-1/2 origin-bottom h-[85px] w-[3px] bg-gray-500" id="minute"></div>
+            <div class="sticks absolute bottom-1/2 left-1/2 origin-bottom h-[100px] w-[1.5px] bg-red-600" id="second"></div>
+            <div class="dot absolute w-[8px] h-[8px] bg-black top-1/2 left-[50%] -translate-x-1/2 -translate-y-1/2 rounded-full z-10"></div>
+        </section>
+    </section>
+    <script src="./JS-watch.js"></script>
+</body>
+</html>
