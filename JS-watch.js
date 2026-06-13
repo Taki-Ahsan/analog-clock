@@ -11,10 +11,11 @@ function clock(){
     let secondDegrees = (seconds * 6); 
     let minuteDegrees = (minutes * 6) + (seconds * 0.1); 
     let hourDegrees = ((hours % 12) * 30) + (minutes * 0.5); 
-    second.style.transform = `translateX(-50%) rotate(${secondDegrees}deg)`;
-    minute.style.transform = `translateX(-50%) rotate(${minuteDegrees}deg)`;
-    hour.style.transform = `translateX(-50%) rotate(${hourDegrees}deg)`;
+    second.style.transform = `rotate(${secondDegrees}deg)`;
+    minute.style.transform = `rotate(${minuteDegrees}deg)`;
+    hour.style.transform = `rotate(${hourDegrees}deg)`;
 }
+
 setInterval(clock, 1000);
 
 clock();
