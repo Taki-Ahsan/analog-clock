@@ -11,7 +11,7 @@
     <title>JS Watch</title>
 </head>
 <body class="bg-[#f0f4f8] m-0 p-0">
-    <section class="flex justify-center mt-[100px]"> 
+    <section class="flex flex-col sm:flex-row items-center justify-evenly mt-[100px]"> 
         <section id="watchBox" class="relative w-[300px] h-[300px] border-[6px] border-slate-800 bg-gradient-to-br from-slate-50 to-slate-200 rounded-full shadow-[0_25px_50px_-12px_rgba(0,0,0,0.7),inset_0_2px_4px_rgba(255,255,255,0.9)]">
             <span class="t1 t absolute text-[16px] font-bold text-slate-700 tracking-wider -translate-x-1/2 -translate-y-1/2 top-[13%] left-[73%] text">1</span>
             <span class="t2 t absolute text-[16px] font-bold text-slate-700 tracking-wider -translate-x-1/2 -translate-y-1/2 top-[28%] left-[87%]">2</span>
@@ -25,10 +25,19 @@
             <span class="t10 t absolute text-[16px] font-bold text-slate-700 tracking-wider -translate-x-1/2 -translate-y-1/2 top-[28%] left-[13%]">10</span>
             <span class="t11 t absolute text-[16px] font-bold text-slate-700 tracking-wider -translate-x-1/2 -translate-y-1/2 top-[13%] left-[27%]">11</span>
             <span class="t12 t absolute text-[18px] font-extrabold text-slate-800 tracking-wider -translate-x-1/2 -translate-y-1/2 top-[7%] left-[50%]">12</span>
-            <div class="sticks absolute bottom-1/2 left-1/2 -translate-x-1/2 origin-bottom h-[65px] w-[6px] bg-slate-900 rounded-t-full shadow-md transition-transform duration-300 ease-out" id="hour"></div>
-            <div class="sticks absolute bottom-1/2 left-1/2 -translate-x-1/2 origin-bottom h-[95px] w-[4px] bg-slate-600 rounded-t-full shadow-sm" id="minute"></div>
-            <div class="sticks absolute bottom-1/2 left-1/2 -translate-x-1/2 origin-bottom h-[110px] w-[1.5px] bg-red-500 shadow-sm" id="second"></div>
+            <div class="sticks absolute bottom-1/2 left-1/2 origin-bottom h-[65px] w-[6px] bg-slate-900 rounded-t-full shadow-md transition-transform duration-300 ease-out" id="hour"></div>
+            <div class="sticks absolute bottom-1/2 left-1/2 origin-bottom h-[95px] w-[4px] bg-slate-600 rounded-t-full shadow-sm" id="minute"></div>
+            <div class="sticks absolute bottom-1/2 left-1/2 origin-bottom h-[110px] w-[1.5px] bg-red-500 shadow-sm" id="second"></div>
             <div class="dot absolute w-[12px] h-[12px] bg-gradient-to-tr from-amber-600 to-amber-400 top-1/2 left-[50%] -translate-x-1/2 -translate-y-1/2 rounded-full z-10 shadow-md ring-2 ring-slate-900"></div>
+        </section>
+        <section id="calendar" class="flex flex-col items-center justify-center w-[300px] h-[300px] border-[6px] border-slate-800 bg-gradient-to-br from-slate-50 to-slate-200 rounded-full shadow-[0_25px_50px_-12px_rgba(0,0,0,0.25),inset_0_2px_4px_rgba(255,255,255,0.9)] text-center p-6">
+                <span id="day" class="text-xs font-bold uppercase tracking-widest text-slate-500">Tuesday</span>
+                <h1 id="date" class="text-7xl font-extrabold text-slate-900 my-2 drop-shadow-sm">26</h1>
+                <p class="text-slate-800 font-bold text-xl tracking-wide">
+                    <span id="monthName">May</span>
+                    <span id="monthNumber" class="text-sm text-red-500 font-extrabold ml-1">05</span>
+                </p>
+                <span id="year" class="text-xs font-bold text-slate-500 tracking-wider mt-3"></span>
         </section>
     </section>
     <script src="./JS-watch.js"></script>
